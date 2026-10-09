@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Networking Summary</title>
+</head>
+<body>
+
+  <h1>Internet Fundamentals: Networking</h1>
+
+  <p>Jakub Tomaszewski:</p>
+  <input type="text" id="nameInput">
+  <button onclick="showName()">Submit</button>
+
+  <p>This lesson introduces the basics of how computers connect and communicate over the Internet, covering network devices, Internet protocols, and name resolution. It is built around three main objectives: understanding the infrastructure needed to get online, learning the protocols that make Internet services work, and grasping the basics of the Domain Name System.</p>
+
+  <p>First, you learn to identify the hardware and software required to access the Internet. Hardware includes computers, routers, switches, modems, and the cables or wireless links connecting them, while software includes operating systems, network drivers, and browsers. Together these form a computer network, a group of connected devices that share resources and information.</p>
+
+  <p>Next, you study the key communication protocols and the roles they play. The Internet protocol suite, commonly called TCP/IP, is the foundation. IP handles addressing and routing so data packets know where to go, while TCP makes sure data arrives reliably and in the correct order. Higher-level protocols such as HTTP, which delivers web pages, build on top of these to provide everyday services. The OSI model is also introduced as a way of understanding how these layers fit together.</p>
+
+  <p>Finally, the lesson explains the principles of DNS, which works like the Internet's phone book. People find names like example.com easier to remember than numeric IP addresses, so DNS translates those names into addresses that computers can use to locate the correct server. This process, called name resolution, relies on a hierarchy of DNS servers.</p>
+
+  <p>To support learning, the lesson points to Wikipedia articles on computer networks, the Internet protocol suite, and DNS, along with a Wikibooks chapter on computer networks. It also includes YouTube videos such as "Computer Networks - Crash Course," "How does the INTERNET work?" and "DNS Explained."</p>
+
+  <p>By the end, you should understand how devices connect, how data travels across networks using protocols, and how readable web addresses become the numeric addresses computers rely on. This knowledge is essential for web development, since every website depends on these systems.</p>
+
+  <script>
+    function showName() {
+      var name = document.getElementById("nameInput").value;
+      document.getElementById("author").innerHTML = "Written by: " + name;
+    }
+  </script>
+
+</body>
+</html>
