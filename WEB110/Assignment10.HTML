@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What I Learned: CSS</title>
+</head>
+<body>
+  <h1>What I Learned: Internet Fundamentals, CSS</h1>
+
+  <p>
+    <label for="name">Jakub Tomaszewski:</label>
+    <input type="text" id="name" placeholder="Your name">
+    <button onclick="addName()">Submit</button>
+  </p>
+  <h3 id="author"></h3>
+
+  <p>Cascading Style Sheets (CSS) is a style sheet language used to describe how a document written in a markup language, such as HTML, should be presented. Along with HTML and JavaScript, CSS is a cornerstone technology of the web. Most websites use it to create visually engaging webpages, and it also powers the user interfaces of web applications and many mobile applications.</p>
+
+  <p>In this lesson, I learned how to link cascading style sheets to web pages and how to create and use simple CSS pages. Linking is important because it lets one style sheet control the look of many pages, which keeps a website consistent and makes it easier to update.</p>
+
+  <p>I also learned how to format, style, and lay out the elements on a web page. This process begins with obtaining user requirements, so that the design meets the needs of the people who will use the site. From there, I learned to style the elements of a web page using CSS, such as text, colors, and spacing. I also learned how to apply CSS to multiple pages in a website, so that every page shares the same design. Finally, I practiced positioning document elements using CSS, which controls where things appear on the page.</p>
+
+  <p>The last major skill was testing and validating web pages. This includes testing the website in various browsers, since pages can look or behave differently depending on which browser is used. I also learned to validate CSS against industry standards, which helps make sure the code is correct and works reliably. After testing, I learned to report the test results to the appropriate person, such as a client, teammate, or supervisor, so any problems can be fixed.</p>
+
+  <p>Overall, this lesson showed me that CSS is what turns plain HTML into a polished, professional-looking website. It covers the full process, from understanding what users need, to styling and laying out a page, to checking that everything works properly before it is shared.</p>
+
+  <script>
+    function addName() {
+      var name = document.getElementById("name").value;
+      document.getElementById("author").innerText = name ? "Written by: " + name : "";
+    }
+  </script>
+</body>
+</html>
